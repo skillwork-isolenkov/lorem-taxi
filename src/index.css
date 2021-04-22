@@ -1,0 +1,1113 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navigation */
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  background-image: url(./Components/img/hero-bg2.png);
+  background-repeat: no-repeat;
+  background-size: 64.4%;
+  height: 5vh;
+}
+.navigation h3{
+  margin-left: 35px;
+  color: #3B3A3A;
+}
+.navigation h3 a:hover{
+  color: white;
+  cursor: pointer;
+}
+.navigation li {
+  display: inline;
+  padding: 10px 20px;
+}
+.navigation a{
+  text-decoration: none;
+  color: #3B3A3A;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.navigation a:hover{
+  text-decoration: underline;
+  color: #F7C621;
+}
+
+#burger-menu{
+  display: none;
+}
+#exit-menu{
+  display: none;
+}
+
+/* Home */
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  background-image: url(/src/Components/img/hero-bg.jpg);
+  background-size: cover;
+}
+.home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 65%;
+  background-image: url(/src/Components/img/hero-bg2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.home img{
+  height: 200px;
+}
+
+.box{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin-left: 10%;
+  z-index: 1;
+}
+
+.detail-box h3{
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.detail-box h2{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #3B3A3A;
+  margin-top: 0;
+}
+
+.home-btn{
+  text-align: center;
+  padding: 10px 35px;
+  border: 1px solid #3B3A3A;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+.home-btn:hover{
+  background-color: #3B3A3A;
+  color: white;
+  border: 2px solid #F7C621;
+}
+
+.get-taxi{
+  width: 400px;
+  padding: 25px;
+  background-color:#3B3A3A;
+  border-radius: 10px;
+  margin: auto;
+  z-index: 1;
+}
+.get-taxi h4{
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.get-taxi form{
+  margin: 5px 0;
+}
+.get-taxi input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+.btn-input{
+  display: flex;
+  margin-bottom: 10px;
+}
+.btn-input input{
+  width: calc(95% - 116px);
+    margin: 0;
+    margin-right: 10px;
+}
+.btn-input button{
+  flex: 1;
+  min-width: 116px;
+  border: none;
+  outline: none;
+  background-color: #F7C621;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.btn-input button:hover{
+  background-color: white;
+  color: #3B3A3A;
+}
+
+#home-message{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* About */
+.about{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 94vh;
+}
+.about-taxi{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border-right: 3px solid #F7C621;
+  padding-right: 100px;
+}
+.about-taxi h2{
+  font-size: 2rem;
+  color: #3B3A3A;
+  margin: 0;
+}
+.about-taxi p{
+  width: 550px;
+  color: #3B3A3A;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.about-btn{
+  text-align: center;
+  padding: 10px 35px;
+  border: 1px solid #3B3A3A;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+.about-btn:hover{
+  background-color: #3B3A3A;
+  color: white;
+  border: 2px solid #F7C621;
+}
+
+.taxi-logo::before{
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background-color: #3B3A3A;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.taxi-logo img{
+  position: relative;
+  height: 210px;
+}
+
+/* Services */
+.services{
+  display: flex;
+  flex-flow: column wrap;
+  width: 95%;
+  height: 60vh;
+  margin-top: 5%;
+  margin: 0 auto;
+  border: 1px solid #e5e5e5;
+}
+
+.heading-container h2{
+  color: #F7C621;
+  font-size: 2rem;
+  margin-left: 17%;
+}
+
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box-services{
+  align-items: center;
+}
+
+.services-box h5{
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0;
+  color: #3B3A3A;
+}
+.services-box p{
+  margin-top: 0;
+  font-size: 17px;
+  color: #3B3A3A;
+  margin-bottom: 5px;
+}
+
+.services-box button{
+    text-align: center;
+    padding: 10px 35px;
+    border: 1px solid #3B3A3A;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.services-box button:hover{
+  background-color: #3B3A3A;
+  color: white;
+  border: 2px solid #F7C621;
+}
+
+/* News */
+.news{
+  display: flex;
+  flex-flow: column wrap;
+  height: 84vh;
+  margin-top: 5%;
+}
+
+.news-header h2{
+  color: #3B3A3A;
+  font-size: 2rem;
+  margin-left: 12%;
+}
+
+.news-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 25px;
+  align-items: center;
+}
+.news-box{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  align-items: center;
+}
+.news-box h5{
+  background-color: #3B3A3A;
+  color: white;
+  margin-bottom: -15px;
+  padding: 7px 25px;
+  z-index: 2;
+  font-size: 15px;
+}
+
+.details-news{
+  padding: 15px;
+  background-color: #F7C621;
+  width: 323px;
+}
+.details-news h4{
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.details-news p{
+  font-weight: 700;
+}
+
+/* Client */
+.client{
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  border-bottom: 1px solid #3B3A3A;
+  background-image: url(/src/Components/img/client/taxi-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.client-header h2{
+  color: white;
+  font-size: 2rem;
+  margin-left: 16%;
+}
+
+.client-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+}
+.client-box{
+  width: 500px;
+  box-shadow: 0px 5px 15px 0px;
+  padding: 10px 30px;
+  background-color: #F7C621;
+}
+.client-box h3{
+  color: #3B3A3A;
+  font-size: 27px;
+}
+.client-box p{
+  width: 300px;
+  color: #3B3A3A;
+}
+
+/* Contact Us */
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+  margin-top: 3%;
+}
+
+.contact-heading h2{
+  color: #3B3A3A;
+  font-size: 2rem;
+  margin-right: 950px;
+  border-right: 3px solid #F7C621;
+  padding-right: 15px;
+}
+
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5%;
+}
+.contact-container img{
+  height: 200px;
+}
+
+.contact-box{
+  padding: 25px;
+  background-color: #3B3A3A;
+  margin: 0 45px;
+  width: 500px;
+}
+.contact-box h4{
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact-box input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+.contact-box button{
+  padding: 8px 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #F7C621;
+  color: #3B3A3A;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.contact-box button:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
+#input-msg{
+  height: 75px;
+}
+#contact-msg{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Download */
+.download{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #F7C621;
+  height: 65vh;
+}
+
+.download-container h2{
+  color: #3B3A3A;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.download-container h4{
+  color: white;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.download-container p{
+  color: white;
+  width: 500px;
+  font-weight: bold;
+}
+
+.icons img{
+  margin-right: 10px;
+}
+
+/* Choose Us */
+.choose{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.choose-heading h2{
+  color: #3B3A3A;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-right: 625px;
+  border-right: 3px solid #F7C621;
+  padding-right: 15px;
+  margin-bottom: 10%;
+}
+
+.choose-box{
+  display: flex;
+  align-items: center;
+}
+
+.choose-img{
+  min-width: 90px;
+  min-height: 90px;
+  background-color: #3B3A3A;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 45px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.choose-img:hover{
+  background-color: #F7C621;
+}
+
+.choose-details h5{
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.choose-details p{
+  margin: 0;
+  color: #3B3A3A;
+  width: 700px;
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #3B3A3A;
+  height: 45vh;
+}
+
+.footer-container{
+  margin-top: 3%;
+}
+
+.footer-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-form h4{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.footer-form form{
+  display: flex;
+  align-items: center;
+}
+.footer-form input{
+  background-color: white;
+  border: none;
+  outline: none;
+  color: #3B3A3A;
+  height: 40px;
+  padding-left: 15px;
+}
+.footer-form button{
+  border: none;
+  outline: none;
+  background-color: #F7C621;
+  padding: 11.5px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 2s;
+}
+.footer-form button:hover{
+  background-color: #e5e5e5;
+}
+
+.footer-links{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-links li {
+  display: inline;
+  padding: 10px 20px;
+}
+.footer-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.footer-links a:hover{
+  text-decoration: underline;
+  color: #F7C621;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.footer-social li{
+  display: inline;
+  padding: 10px 20px;
+}
+
+#footer-msg{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MyProjects */
+.my-projects{
+  background-color: #F7C621;
+  display: flex;
+  justify-content: center;
+  height: 7vh;
+}
+.my-projects p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.my-projects a{
+  text-decoration: none;
+  color: #3B3A3A;
+}
+.my-projects a:hover{
+  text-decoration: underline;
+}
+
+/* Login */
+.login{
+  height: 65vh;
+  background-image: url(./Components/img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-form{
+  width: 400px;
+  padding: 25px;
+  background-color:#3B3A3A;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  top: 25%;
+}
+.login-form h4{
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.login-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+.login-form p{
+  color: white;
+  font-weight: bold;
+}
+.login-form a{
+  text-decoration: none;
+  color: #F7C621;
+}
+.login-form a:hover{
+  text-decoration: underline;
+}
+
+.login-input{
+  display: flex;
+}
+.login-input button{
+  min-width: 116px;
+  border: none;
+  outline: none;
+  background-color: #F7C621;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 13px 15px;
+  transition: 0.5s;
+}
+.login-input button:hover{
+  background-color: white;
+  color: #3B3A3A;
+}
+
+#login-msg{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Register */
+.register{
+  height: 75vh;
+  background-image: url(./Components/img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register-form{
+  width: 400px;
+  padding: 25px;
+  background-color:#3B3A3A;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  top: 20%;
+}
+.register-form h4{
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.register-form form{
+  margin: 15px 0;
+}
+.register-form input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+.register-form p{
+  color: white;
+  font-weight: bold;
+}
+.register-form a{
+  text-decoration: none;
+  color: #F7C621;
+}
+.register-form a:hover{
+  text-decoration: underline;
+}
+
+.register-input{
+  display: flex;
+}
+.register-input input{
+  width: calc(95% - 116px);
+    margin: 0;
+    margin-right: 10px;
+}
+.register-input button{
+  flex: 1;
+  min-width: 116px;
+  border: none;
+  outline: none;
+  background-color: #F7C621;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.register-input button:hover{
+  background-color: white;
+  color: #3B3A3A;
+}
+
+#register-msg{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+
+/* Portrait */
+@media only screen and (max-width: 900px) {
+  /* Navigation */
+  .navigation{
+    height: 7vh;
+    background-image: none;
+    background-color: #F7C621;
+    align-items: center;
+  }
+  .navigation h3 a{
+   font-size: 20px;
+  }
+  .navigation h3:hover{
+    color: white;
+  }
+  .navigation ul{
+    display: none;
+    flex-flow: column nowrap;
+    background-color: #F7C621;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 7;
+  }
+  .navigation ul:active{
+    transform: rotate(5deg);
+    transition:  2s;
+  }
+  .navigation li{
+    padding: 20px 0;
+  }
+  .navigation a{
+    font-size: 15px;
+  }
+  .navigation a:hover{
+    color: white;
+  }
+
+  #burger-menu{
+    display: flex;
+    font-size: 45px;
+    color: #3B3A3A;
+    margin-top: 10px;
+    margin-right: 20px;
+    z-index: 8;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  #exit-menu{
+    display: none;
+    font-size: 45px;
+    color: #3B3A3A;
+    margin-top: 10px;
+    margin-right: 20px;
+    z-index: 8;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  /* Home */
+  .box{
+    align-items: center;
+  }
+  .box img{
+    height: 130px;
+    width: 300px;
+  }
+  .home-btn{
+    margin-top: 15px;
+  }
+
+  .get-taxi{
+    width: 330px;
+  }
+
+  /* About */
+  .about-taxi{
+    padding-right: 10px;
+  }
+  .about-taxi p{
+    width: 300px;
+  }
+
+  .about-btn{
+    margin-top: 10px;
+  }
+
+  .taxi-logo::before{
+    height: 160px;
+    width: 200px;
+  }
+  .taxi-logo img{
+    height: 150px;
+    width: 300px;
+  }
+
+  /* Services */
+  .services{
+    display: flex;
+    flex-direction: column;
+    height: 135vh;
+  }
+  
+  .box-services{
+    margin-bottom: 30px;
+  }
+
+  /* News */
+  .news{
+    height: 200vh;
+    flex-wrap: nowrap;
+  }
+
+  .news-box{
+    margin-bottom: 15px;
+  }
+  .news-box img{
+    height: 200px;
+  }
+
+  .details-news{
+    width: 265px;
+    font-size: 13px;
+  }
+
+  /* Client */
+  .client{
+    height: 110vh;
+  }
+
+  .client-box{
+    width: 300px;
+    margin-bottom: 25px;
+  }
+  .client-box p{
+    width: 270px;
+  }
+
+  /* Contact */
+  .contact{
+    height: 130vh;
+  }
+  .contact-heading{
+    width: 300px;
+  }
+  .contact-heading h2{
+    border-right:none;
+  }
+
+  .contact-box{
+    width: 330px;
+    margin: auto;
+  }
+
+  .contact-container img{
+    height: 250px;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+
+  /* Download */
+  .download{
+    height: 115vh;
+  }
+  #mobileImg{
+    height: 400px;
+  }
+
+  .download-container p {
+    width: 320px;
+  }
+
+  .icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  /* Choose */
+  .choose-heading{
+    width: 300px;
+  }
+  .choose-heading h2{
+    border-right: none;
+  }
+  
+  .choose-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .choose-details p {
+    width: 300px;
+    font-size: 17px;
+  }
+  .choose-img{
+    margin-right: 0;
+  }
+
+  /* Login */
+  .login-form{
+    width: 340px;
+    top: 20%;
+  }
+
+  /* Register */
+  .register-form{
+    width: 330px;
+    top: 17%;
+  }
+  .register-form p{
+    width: 300px;
+  }
+
+  /* Footer */
+  .footer{
+    height: 90vh;
+  }
+
+  .footer-container{
+    margin-top: 0;
+  }
+  .footer-links{
+    margin-top: 0;
+  }
+  .footer-links ul{
+    padding:0;
+  }
+  .footer-links li{
+    display: flex;
+    padding: 15px 20px;
+  }
+
+  .footer-social ul{
+    padding: 0;
+  }
+
+  /* MyProjects */
+  .my-projects{
+    height: 8vh;
+  }
+  .my-projects p{
+    font-size: 20px;
+  }
+}
+
+/* Landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape){
+  /* Navigation */
+  .navigation{
+    height: 15vh;
+  }
+  /* Home */
+  .get-taxi{
+    position: relative;
+    margin-left: 65px;
+  }
+
+  /* News */
+  .news{
+    height: 250vh;
+  }
+
+  .news-box img{
+    height: 130px;
+  }
+
+  .details-news{
+    width: 173px;
+    font-size: 11px;
+  }
+
+  /* Client */
+  .client{
+    height: 120vh;
+  }
+
+  /* Contact */
+  .contact{
+    height: 150vh;
+  }
+
+  /* Footer */
+  .footer{
+    height: 150vh;
+  }
+
+  /* MyProjects */
+  .my-projects{
+    height: 15vh;
+  }
+}
