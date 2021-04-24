@@ -1,7 +1,7 @@
 import AppRouter from "./AppRouter";
 import Footer from "./Components/Footer";
 import MyProjects from "./Components/MyProjects/MyProjects";
-import Navigation from "./Components/Navigation";
+import Navigation from "./Components/Navigation/Navigation";
 
 function App() {
   return (

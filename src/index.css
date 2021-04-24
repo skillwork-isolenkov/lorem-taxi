@@ -17,49 +17,6 @@ code {
     monospace;
 }
 
-/* Navigation */
-.navigation{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-  background-image: url(./Components/img/hero-bg2.png);
-  background-repeat: no-repeat;
-  background-size: 64.4%;
-  height: 5vh;
-}
-.navigation h3{
-  margin-left: 35px;
-  color: #3B3A3A;
-}
-.navigation h3 a:hover{
-  color: white;
-  cursor: pointer;
-}
-.navigation li {
-  display: inline;
-  padding: 10px 20px;
-}
-.navigation a{
-  text-decoration: none;
-  color: #3B3A3A;
-  font-size: 15px;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.navigation a:hover{
-  text-decoration: underline;
-  color: #F7C621;
-}
-
-#burger-menu{
-  display: none;
-}
-#exit-menu{
-  display: none;
-}
-
 /* Home */
 .home{
   display: flex;
@@ -811,68 +768,6 @@ code {
 
 /* Portrait */
 @media only screen and (max-width: 900px) {
-  /* Navigation */
-  .navigation{
-    height: 7vh;
-    background-image: none;
-    background-color: #F7C621;
-    align-items: center;
-  }
-  .navigation h3 a{
-   font-size: 20px;
-  }
-  .navigation h3:hover{
-    color: white;
-  }
-  .navigation ul{
-    display: none;
-    flex-flow: column nowrap;
-    background-color: #F7C621;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 200px;
-    z-index: 7;
-  }
-  .navigation ul:active{
-    transform: rotate(5deg);
-    transition:  2s;
-  }
-  .navigation li{
-    padding: 20px 0;
-  }
-  .navigation a{
-    font-size: 15px;
-  }
-  .navigation a:hover{
-    color: white;
-  }
-
-  #burger-menu{
-    display: flex;
-    font-size: 45px;
-    color: #3B3A3A;
-    margin-top: 10px;
-    margin-right: 20px;
-    z-index: 8;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-
-  #exit-menu{
-    display: none;
-    font-size: 45px;
-    color: #3B3A3A;
-    margin-top: 10px;
-    margin-right: 20px;
-    z-index: 8;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-
   /* Home */
   .box{
     align-items: center;
@@ -1067,10 +962,6 @@ code {
 
 /* Landscape */
 @media only screen and (max-width: 900px) and (orientation: landscape){
-  /* Navigation */
-  .navigation{
-    height: 15vh;
-  }
   /* Home */
   .get-taxi{
     position: relative;
