@@ -589,6 +589,10 @@ code {
   font-weight: bold;
 }
 
+.arrow-icon{
+  font-size: 14px;
+}
+
 /* MyProjects */
 .my-projects{
   background-color: #F7C621;

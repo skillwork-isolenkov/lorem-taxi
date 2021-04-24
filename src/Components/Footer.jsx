@@ -1,10 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import facebook from './img/footer/fb.png'
 import instagram from './img/footer/instagram.png'
 import linkedin from './img/footer/linkedin.png'
 import twitter from './img/footer/twitter.png'
 import { useState } from 'react'
+import * as AiIcons from "react-icons/ai";
 const { Link } = require("react-router-dom")
 
 const Footer = () => {
@@ -33,7 +32,7 @@ const Footer = () => {
                     <h4>Subscribe Our Newsletter</h4>
                     <form action="/">
                         <input type="text" placeholder="Enter your email" id="email-input" />
-                        <button onClick={footerBtn}><FontAwesomeIcon icon={faArrowRight} /></button>
+                        <button onClick={footerBtn}><AiIcons.AiOutlineArrowRight className="arrow-icon" /></button>
                     </form>
                     <span id="footer-msg">{message}</span>
                 </div>
